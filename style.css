@@ -18,7 +18,7 @@ header {
 .header-icons {
   display: flex;
   gap: 14px;
-  width: 200px;
+  width: 170px;
 }
 
 .header-icons img:hover {
@@ -87,7 +87,8 @@ header {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/image/bg.svg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("../assets/image/bg.svg");
   left: 0;
   top: 0;
   width: 100%;
@@ -123,4 +124,4 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
