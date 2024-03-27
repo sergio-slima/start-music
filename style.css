@@ -154,6 +154,44 @@ header {
     font-size: 20px;
   }
 }
+.about {
+  background-color: #06121e;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+}
+.about-content img {
+  max-width: 570px;
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+  font-family: "Squada One", sans-serif;
+}
+.about-description p {
+  margin-bottom: 14px;
+  line-height: 150%;
+  font-size: 24px;
+  font-family: "Neue Machina", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Squada One", sans-serif;
   width: 100%;
