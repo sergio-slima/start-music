@@ -33,12 +33,15 @@ header {
 }
 
 .header-button {
-    border: 1px solid $white-normal;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border: 1px solid $white-normal;    
     padding: 8px 24px;
     border-radius: 4px;
     color: $white-normal;
     background-color: transparent;
-    transition: background-color 0.8s;
+    transition: background-color 0.8s;      
 }
 
 .header-button:hover {
