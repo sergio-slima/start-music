@@ -4,14 +4,15 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-between;      
 }
 
 .header-icons {
     display: flex;
     gap: 14px;
     width: 200px;
+    margin-top: 18px;  
 }
 
 .header-icons img:hover{
@@ -27,9 +28,9 @@ header {
 .header-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 14px;
-    width: 200px;
+    justify-content: center;    
+    width: 170px;
+    margin-top: 18px;  
 }
 
 .header-button {
@@ -41,7 +42,8 @@ header {
     border-radius: 4px;
     color: $white-normal;
     background-color: transparent;
-    transition: background-color 0.8s;      
+    transition: background-color 0.8s; 
+    margin-top: 18px;        
 }
 
 .header-button:hover {

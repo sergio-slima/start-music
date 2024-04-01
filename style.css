@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -11,7 +12,7 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -19,6 +20,7 @@ header {
   display: flex;
   gap: 14px;
   width: 200px;
+  margin-top: 18px;
 }
 
 .header-icons img:hover {
@@ -37,8 +39,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 14px;
-  width: 200px;
+  width: 170px;
+  margin-top: 18px;
 }
 
 .header-button {
@@ -51,6 +53,7 @@ header {
   color: #ffffff;
   background-color: transparent;
   transition: background-color 0.8s;
+  margin-top: 18px;
 }
 
 .header-button:hover {
@@ -170,9 +173,6 @@ header {
   gap: 14px;
   padding: 34px 14px 64px 14px;
 }
-.about-content img {
-  max-width: 570px;
-}
 
 .about-content div {
   flex: 1;
@@ -182,6 +182,15 @@ header {
   font-size: 38px;
   margin-bottom: 24px;
   font-family: "Squada One", sans-serif;
+}
+.about-description div {
+  display: flex;
+}
+.about-description img {
+  height: 18px;
+  width: 18px;
+  align-items: center;
+  justify-content: center;
 }
 .about-description p {
   margin-bottom: 14px;
@@ -265,6 +274,19 @@ header {
   cursor: default;
 }
 
+.app {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+  font-family: "Squada One", sans-serif;
+}
+
 @media screen and (max-width: 768px) {
   .haircuts {
     flex-direction: column;
@@ -282,12 +304,20 @@ header {
   gap: 24px;
   color: #ffffff;
 }
+.footer p {
+  font-size: 14px;
+  font-family: "Neue Machina", sans-serif;
+}
 
 .footer-icons {
   display: flex;
   gap: 8px;
   color: #ffffff;
   width: 200px;
+}
+
+.footer-logo {
+  width: 170px;
 }
 
 .btn-topo {
@@ -299,9 +329,10 @@ header {
 .btn-topo img {
   max-width: 44px;
   transition: transform 0.4s;
+  transform: rotate(270deg);
 }
 .btn-topo img:hover {
-  transform: scale(1.1);
+  transform: rotate(270deg) scale(1.2);
 }
 
 @media screen and (max-width: 768px) {

@@ -98,10 +98,6 @@
     justify-content: center;
     gap: 14px;
     padding: 34px 14px 64px 14px;
-
-    img {
-        max-width: 570px;
-    };
 }
 
 .about-content div {
@@ -113,6 +109,15 @@
         font-size: 38px;
         margin-bottom: 24px;
         font-family: "Squada One", sans-serif;
+    }
+    div{
+        display: flex;    
+    }
+    img{
+        height: 18px; 
+        width: 18px;
+        align-items: center;
+        justify-content: center;
     }
     p{
         margin-bottom: 14px;
@@ -201,6 +206,19 @@
     cursor: default;
 }
 
+.app {
+    background-color: $white-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+        font-family: "Squada One", sans-serif;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .haircuts {
         flex-direction: column;
@@ -220,6 +238,11 @@
     padding: 54px 0;
     gap: 24px;
     color: $white-normal;
+
+    p{
+        font-size: 14px;
+        font-family: "Neue Machina", sans-serif; 
+    }
 }
 
 .footer-icons {
@@ -229,20 +252,25 @@
     width: 200px;
 }
 
+.footer-logo {   
+    width: 170px;   
+}
+
 //TOPO
 .btn-topo {
     position: fixed;
     bottom: 14px;
     right: 24px;
-    z-index: 99;
+    z-index: 99;    
 
     img{
         max-width: 44px;
         transition: transform 0.4s;
+        transform: rotate(270deg);
     }
 
     img:hover {
-        transform: scale(1.1);
+        transform: rotate(270deg) scale(1.2);
     }
 }
 
